@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:926c8555bc44267e5c31b2e692162747:3f3e0cb5697362071309b1468f2ddafe:2bbf6256ab57537543cd433f3d66b050$ -->
+<TextureAtlas imagePath="labels_ui2.png">
+    <SubTexture name="label_avatar" x="2" y="2" width="402" height="143" frameX="0" frameY="-23" frameWidth="402" frameHeight="166"/>
+    <SubTexture name="label_badges" x="2" y="792" width="426" height="165" frameX="0" frameY="-7" frameWidth="426" frameHeight="172"/>
+    <SubTexture name="label_connexion" x="406" y="2" width="565" height="150" frameX="-29" frameY="-20" frameWidth="594" frameHeight="172"/>
+    <SubTexture name="label_deconexion" x="2" y="629" width="691" height="161" frameX="0" frameY="-22" frameWidth="691" frameHeight="186"/>
+    <SubTexture name="label_demander_a_des_amis" x="2" y="314" width="875" height="154" frameX="0" frameY="-13" frameWidth="875" frameHeight="169"/>
+    <SubTexture name="label_facebook" x="430" y="804" width="555" height="182" frameX="0" frameY="-9" frameWidth="555" frameHeight="191"/>
+    <SubTexture name="label_faq" x="794" y="470" rotated="true" width="199" height="332" frameX="0" frameY="-13" frameWidth="332" frameHeight="212"/>
+    <SubTexture name="label_inscription" x="341" y="154" width="581" height="158" frameX="0" frameY="-21" frameWidth="581" frameHeight="179"/>
+    <SubTexture name="label_profil" x="2" y="147" width="337" height="156"/>
+    <SubTexture name="label_retablir_les_achats" x="2" y="470" width="790" height="157" frameX="0" frameY="-15" frameWidth="790" frameHeight="172"/>
+</TextureAtlas>

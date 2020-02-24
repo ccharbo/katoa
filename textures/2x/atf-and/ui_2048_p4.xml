@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:ac9799198ac90dfd2ae9ef04019a3308:74fc930483c0f6ad01b2a9347aded19f:f678247693d9df59af06bdff932cb470$ -->
+<TextureAtlas imagePath="ui_2048_p4.png" width="2048" height="2048">
+    <SubTexture name="border_super_champion" x="1160" y="1274" width="742" height="757"/>
+    <SubTexture name="chear" x="2" y="2" width="1334" height="1009"/>
+    <SubTexture name="multiplayer_button" x="1338" y="993" rotated="true" width="285" height="279"/>
+    <SubTexture name="rect_purpur" x="1338" y="2" rotated="true" width="578" height="989"/>
+    <SubTexture name="themes_background_art" x="2" y="1013" rotated="true" width="1156" height="859"/>
+</TextureAtlas>

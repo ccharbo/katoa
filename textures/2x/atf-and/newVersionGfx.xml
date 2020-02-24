@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:75430f37f2cfc732810b526ca4e53faa:07a0ec40a6d0d27ecb2538c22c9d8c39:ef7df3d8a87d5d9f5b4fdf3040c44093$ -->
+<TextureAtlas imagePath="newVersionGfx.png" width="1024" height="1024">
+    <SubTexture name="icon_chairs" x="1" y="1" width="796" height="402"/>
+    <SubTexture name="label_mise_a_jour" x="1" y="405" width="660" height="172"/>
+</TextureAtlas>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:f638cadba3bebbba55871fbb88f057f2:f19f6ef52dbe4bbe545e22a1cbcf8035:30d1618761fdc96e9a71bd6a9c76918e$ -->
+<TextureAtlas imagePath="achIcons.png">
+    <SubTexture name="ach_border" x="1" y="1" width="393" height="399"/>
+    <SubTexture name="ai_01_grand_jour" x="373" y="953" width="199" height="188"/>
+    <SubTexture name="ai_02_lve_tt" x="251" y="612" width="141" height="221"/>
+    <SubTexture name="ai_03_moins_une" x="922" y="496" width="95" height="192"/>
+    <SubTexture name="ai_04_direct_kill" x="862" y="690" width="156" height="228"/>
+    <SubTexture name="ai_05_econome" x="200" y="1296" width="115" height="258"/>
+    <SubTexture name="ai_06_a_l_aise" x="673" y="140" width="268" height="136"/>
+    <SubTexture name="ai_07_sprinter" x="673" y="2" width="273" height="136"/>
+    <SubTexture name="ai_08_meticuleux" x="397" y="306" width="263" height="82"/>
+    <SubTexture name="ai_09_carr_d_as" x="667" y="278" width="266" height="216"/>
+    <SubTexture name="ai_10_cash_machine" x="263" y="403" width="130" height="207"/>
+    <SubTexture name="ai_11_tandem" x="397" y="176" width="268" height="128"/>
+    <SubTexture name="ai_12_perfectionniste" x="812" y="920" width="202" height="221"/>
+    <SubTexture name="ai_13_nonname" x="2" y="1108" width="196" height="196"/>
+    <SubTexture name="ai_14_monochrome" x="574" y="1016" width="196" height="196"/>
+    <SubTexture name="ai_15_rponse__tout" x="2" y="403" width="259" height="150"/>
+    <SubTexture name="ai_16_carnage___chasseur_de_tte" x="397" y="2" width="274" height="172"/>
+    <SubTexture name="ai_17_exterminateur_de_champion" x="641" y="671" width="219" height="152"/>
+    <SubTexture name="ai_18_endurant" x="238" y="835" width="133" height="207"/>
+    <SubTexture name="ai_19_coup_de_pouce" x="339" y="1143" width="164" height="204"/>
+    <SubTexture name="ai_20_perfecto" x="395" y="596" width="244" height="181"/>
+    <SubTexture name="ai_21_ultraconnect" x="208" y="1044" width="129" height="250"/>
+    <SubTexture name="ai_22_novice" x="2" y="695" width="234" height="213"/>
+    <SubTexture name="ai_23_c_tait_juste" x="2" y="555" width="247" height="138"/>
+    <SubTexture name="ai_24_prodigue" x="394" y="779" width="210" height="172"/>
+    <SubTexture name="ai_25_social_challenger" x="660" y="496" width="260" height="173"/>
+    <SubTexture name="ai_26_bff" x="2" y="910" width="204" height="196"/>
+    <SubTexture name="ai_27_le_faux_ami" x="606" y="825" width="204" height="189"/>
+    <SubTexture name="ai__couche_tard" x="397" y="390" width="261" height="204"/>
+</TextureAtlas>

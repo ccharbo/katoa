@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:2ff34c8d878e0916d24ff425090b05b0:950508f1249ed0f76fdcaaef6a3cf4b9:14b6746e848049ff0490fe161050805c$ -->
+<TextureAtlas imagePath="info_popup.atf" width="512" height="512">
+    <SubTexture name="champion_view" x="433" y="109" width="52" height="52"/>
+    <SubTexture name="credits_view" x="433" y="217" width="43" height="45"/>
+    <SubTexture name="half_chair" x="2" y="239" width="401" height="142"/>
+    <SubTexture name="label_informaion" x="2" y="383" width="352" height="94"/>
+    <SubTexture name="number1" x="433" y="2" width="59" height="105" frameX="-1" frameY="0" frameWidth="60" frameHeight="105"/>
+    <SubTexture name="number2" x="405" y="264" width="82" height="101"/>
+    <SubTexture name="progress_panel_bg" x="2" y="2" width="429" height="235"/>
+    <SubTexture name="schampion_view" x="433" y="163" width="52" height="52"/>
+</TextureAtlas>

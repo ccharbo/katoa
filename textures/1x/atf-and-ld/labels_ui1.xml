@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:62c3c18934e01af85d3f4d6c19c1cb5f:c644bed5f6f4b7b3b3ae37f4f840fdfc:a0fe4337c8f797ee0b486d9989bbd52b$ -->
+<TextureAtlas imagePath="labels_ui1.atf">
+    <SubTexture name="label_boutique" x="175" y="184" rotated="true" width="95" height="289"/>
+    <SubTexture name="label_comment_jouer" x="1" y="91" rotated="true" width="85" height="419" frameX="-8" frameY="-8" frameWidth="427" frameHeight="93"/>
+    <SubTexture name="label_jouer" x="351" y="184" rotated="true" width="94" height="228" frameX="0" frameY="-11" frameWidth="228" frameHeight="105"/>
+    <SubTexture name="label_plus_de_question" x="1" y="1" width="497" height="88" frameX="0" frameY="-10" frameWidth="497" frameHeight="98"/>
+    <SubTexture name="label_rating" x="272" y="184" rotated="true" width="77" height="320" frameX="0" frameY="-7" frameWidth="320" frameHeight="84"/>
+    <SubTexture name="label_recharger" x="175" y="91" width="324" height="91" frameX="0" frameY="-9" frameWidth="324" frameHeight="100"/>
+    <SubTexture name="label_reinitialisation" x="88" y="91" rotated="true" width="85" height="386" frameX="0" frameY="-10" frameWidth="386" frameHeight="95"/>
+</TextureAtlas>

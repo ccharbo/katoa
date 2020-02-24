@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:497109747f9863a4b692c7df08309a66:6120c0ac30830612644d5e4982428bf5:c924602567c2b5853d091d5982313ad3$ -->
+<TextureAtlas imagePath="defiGame.png" width="512" height="512">
+    <SubTexture name="btn_add_friend" x="297" y="1" width="99" height="101"/>
+    <SubTexture name="energyIcon" x="230" y="88" width="54" height="80"/>
+    <SubTexture name="mpInGame_icon_revanche" x="1" y="88" width="227" height="232"/>
+    <SubTexture name="mpInGame_label_revanche" x="1" y="1" width="294" height="85"/>
+    <SubTexture name="reward_chair" x="398" y="1" width="92" height="94"/>
+    <SubTexture name="reward_coins" x="398" y="97" width="61" height="69"/>
+    <SubTexture name="white_cross" x="461" y="97" width="45" height="48"/>
+</TextureAtlas>

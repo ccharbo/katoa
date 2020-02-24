@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:7646243038e9170db702dffed83272c0:3c1e0e0c36a09c3bd7a382f854c7cb56:4a89ea785dcfbcf13da2a5d28d1bd026$ -->
+<TextureAtlas imagePath="ui_2048_p3.png" width="2048" height="2048">
+    <SubTexture name="border_champion" x="2" y="1258" width="742" height="757"/>
+    <SubTexture name="border_self" x="746" y="1258" width="582" height="593"/>
+    <SubTexture name="computer" x="1218" y="2" rotated="true" width="821" height="669"/>
+    <SubTexture name="label_sendMode" x="746" y="1853" width="972" height="170"/>
+    <SubTexture name="locked" x="1720" y="673" width="313" height="414"/>
+    <SubTexture name="logo_mini" x="1218" y="673" rotated="true" width="482" height="464" frameX="-10" frameY="-30" frameWidth="512" frameHeight="512"/>
+    <SubTexture name="question_panel_blue" x="2" y="2" width="1214" height="626"/>
+    <SubTexture name="question_panel_lilac" x="2" y="630" width="1214" height="626"/>
+</TextureAtlas>

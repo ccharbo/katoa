@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:9ea829ff1a8f488e277c52e1356d3a07:1fec66e489e7c555a91aee82d880f24a:a07df67baed3b13832b81f800f54dc72$ -->
+<TextureAtlas imagePath="labels_results.png">
+    <SubTexture name="label_bravo" x="2" y="1029" rotated="true" width="365" height="992"/>
+    <SubTexture name="label_defaite" x="2" y="683" width="974" height="341"/>
+    <SubTexture name="label_perdu" x="1169" y="2" rotated="true" width="389" height="1025"/>
+    <SubTexture name="label_resultats" x="369" y="1029" width="1073" height="332"/>
+    <SubTexture name="label_resultats_gold" x="1560" y="2" rotated="true" width="354" height="1073" frameX="0" frameY="-12" frameWidth="1073" frameHeight="366"/>
+    <SubTexture name="label_victoire" x="2" y="343" width="1165" height="338"/>
+    <SubTexture name="label_victoire_gold" x="2" y="2" width="1165" height="339" frameX="0" frameY="-39" frameWidth="1165" frameHeight="407"/>
+</TextureAtlas>

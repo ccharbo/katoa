@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:89b325b4658b5a1e5e4ef54afeab8bab:c8cdfddb7f678aa633a12e7de298144d:a0974dc4b16b1d12107c2a5c0216aa2c$ -->
+<TextureAtlas imagePath="labels_gold.png">
+    <SubTexture name="label_resultats_gold" x="2" y="424" width="631" height="210" frameX="0" frameY="-5" frameWidth="631" frameHeight="215"/>
+    <SubTexture name="label_super_champion_gold" x="2" y="2" width="790" height="420" frameX="0" frameY="0" frameWidth="797" frameHeight="420"/>
+    <SubTexture name="label_victoire_gold" x="2" y="636" width="566" height="166" frameX="0" frameY="-19" frameWidth="566" frameHeight="198"/>
+</TextureAtlas>

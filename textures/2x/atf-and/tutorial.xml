@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:46318389476beb9545974e945935d72a:8c3f0c22360d42bb8ec356523e0d08e2:f512951393d8fdc9674730cd0e5276ed$ -->
+<TextureAtlas imagePath="tutorial.png" width="1024" height="2048">
+    <SubTexture name="finger" x="2" y="1144" width="313" height="662" frameX="-1" frameY="0" frameWidth="316" frameHeight="662"/>
+    <SubTexture name="finger_shadow" x="435" y="484" width="333" height="638"/>
+    <SubTexture name="halfman" x="2" y="484" width="431" height="658"/>
+    <SubTexture name="ring" x="2" y="1808" width="184" height="184"/>
+    <SubTexture name="speechbubble" x="2" y="2" width="936" height="480"/>
+</TextureAtlas>

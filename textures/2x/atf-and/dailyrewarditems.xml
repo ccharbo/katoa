@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:08aa956f4e1ab8e55c9936467bd8f1d4:67eb81d1ac8a754e50c994371a13679e:43c2ba66dd524269acafdbe6e1a6e2b1$ -->
+<TextureAtlas imagePath="dailyrewarditems.png" width="2048" height="1024">
+    <SubTexture name="dailyreward_creditsIcon" x="1" y="539" width="230" height="294"/>
+    <SubTexture name="dailyreward_cross" x="1967" y="1" width="64" height="64"/>
+    <SubTexture name="dailyreward_iconBG" x="1" y="1" width="914" height="536"/>
+    <SubTexture name="dailyreward_pinkMark" x="1967" y="67" width="56" height="58"/>
+    <SubTexture name="dailyreward_playAfterChampionIcon" x="509" y="539" width="272" height="276"/>
+    <SubTexture name="dailyreward_popupTitle" x="1" y="835" width="858" height="180"/>
+    <SubTexture name="dailyreward_presents" x="917" y="1" width="1048" height="342"/>
+    <SubTexture name="dailyreward_themeChooseIcon" x="233" y="539" width="274" height="276"/>
+    <SubTexture name="dailyreward_whiteCross" x="783" y="539" width="91" height="96"/>
+</TextureAtlas>

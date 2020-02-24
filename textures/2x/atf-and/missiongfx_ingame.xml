@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:e37c46bd51863fd31a15a6d918e031fe:815639aaf3d3b5ba15af3ffb48c53bc6:043dfc84bef5a6dd669f1075be4cbe3d$ -->
+<TextureAtlas imagePath="missiongfx_ingame.png" width="2048" height="1024">
+    <SubTexture name="goldTikWithShadow" x="1218" y="2" width="215" height="202"/>
+    <SubTexture name="missionBottomBar" x="2" y="630" width="1280" height="229"/>
+    <SubTexture name="missionQuestionBar" x="2" y="2" width="1214" height="626"/>
+</TextureAtlas>

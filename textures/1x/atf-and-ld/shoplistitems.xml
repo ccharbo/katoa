@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:0c7f779310503a90d2f004bfdbc664fd:16d02acf5cdb5a4cb4835c95ed0b7862:da56ecf4c86c459ffbff874c7555cad3$ -->
+<TextureAtlas imagePath="shoplistitems.atf" width="512" height="1024">
+    <SubTexture name="icon_product_AVousLHonneur" x="287" y="456" width="127" height="129"/>
+    <SubTexture name="icon_product_AVousLHonneur_gray" x="1" y="568" width="127" height="129"/>
+    <SubTexture name="icon_product_CestMoiQuiDecide" x="130" y="568" width="127" height="129"/>
+    <SubTexture name="icon_product_CestMoiQuiDecide_gray" x="259" y="587" width="127" height="129"/>
+    <SubTexture name="icon_product_maxijauge" x="1" y="456" width="141" height="110"/>
+    <SubTexture name="icon_product_maxijauge_gray" x="144" y="456" width="141" height="110"/>
+    <SubTexture name="icon_product_question" x="388" y="593" width="117" height="114"/>
+    <SubTexture name="icon_product_question_gray" x="388" y="709" width="117" height="114"/>
+    <SubTexture name="icon_tvWithCross" x="416" y="525" width="63" height="66"/>
+    <SubTexture name="icon_tvWithPlay" x="416" y="456" width="63" height="67"/>
+    <SubTexture name="infinity" x="471" y="305" width="38" height="27"/>
+    <SubTexture name="shop_button_default" x="1" y="305" width="468" height="149"/>
+    <SubTexture name="shop_button_gray" x="1" y="1" width="471" height="150"/>
+    <SubTexture name="shop_button_purpur" x="1" y="153" width="471" height="150"/>
+</TextureAtlas>

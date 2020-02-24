@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:492dd5afb9bfcff22cce17b36985f81b:e13064e0d1fdeb6caf5ec48d0573c38f:dde46a552f620c77e530486b047a66fa$ -->
+<TextureAtlas imagePath="missiongfx.png" width="1024" height="1024">
+    <SubTexture name="goldRect" x="2" y="517" width="473" height="211"/>
+    <SubTexture name="goldTik" x="903" y="338" width="104" height="96"/>
+    <SubTexture name="greenTikBig" x="588" y="338" width="313" height="253"/>
+    <SubTexture name="label_mission" x="738" y="851" width="249" height="81"/>
+    <SubTexture name="label_passer_la_mission" x="2" y="883" width="548" height="108"/>
+    <SubTexture name="lebel_special_level_title" x="2" y="282" width="584" height="233"/>
+    <SubTexture name="missionButtonShadow" x="2" y="730" width="411" height="146"/>
+    <SubTexture name="missionGold" x="2" y="2" width="592" height="278"/>
+    <SubTexture name="missionStatusCircleBig" x="738" y="593" width="256" height="256"/>
+    <SubTexture name="redCross" x="477" y="593" width="259" height="288"/>
+    <SubTexture name="specialLevel_icon" x="596" y="2" width="405" height="334"/>
+</TextureAtlas>

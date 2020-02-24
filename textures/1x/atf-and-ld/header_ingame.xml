@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:c4807295834087d0ef06d09b3373e8cb:e697f473c6c228cd99457fa6b8392520:38f781d2b1a006da3b6e6f6981de24a6$ -->
+<TextureAtlas imagePath="header_ingame.atf" width="1024" height="1024">
+    <SubTexture name="header_bg_gold" x="1" y="524" width="639" height="140"/>
+    <SubTexture name="header_bg_gold_with_beak" x="1" y="190" width="639" height="185"/>
+    <SubTexture name="header_bg_white" x="1" y="378" width="639" height="143"/>
+    <SubTexture name="header_bg_white_with_beak" x="1" y="1" width="639" height="186"/>
+    <SubTexture name="header_progess_bar_border" x="643" y="1" width="293" height="25"/>
+    <SubTexture name="header_progress_bar_bg" x="643" y="29" width="286" height="21"/>
+    <SubTexture name="header_progress_bar_blick" x="643" y="77" width="286" height="13"/>
+    <SubTexture name="header_progress_bar_fill" x="643" y="53" width="286" height="21"/>
+    <SubTexture name="header_token_selector" x="939" y="1" width="49" height="58"/>
+    <SubTexture name="header_token_separator" x="991" y="1" width="5" height="46"/>
+</TextureAtlas>

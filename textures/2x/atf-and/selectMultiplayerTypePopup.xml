@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:9d016c2ef6e8ff918c16e60cbbe770b6:db027cb002aa3b0746b7634bf2264416:cb7a0a5f0a98e6a6405685ee7c6013d7$ -->
+<TextureAtlas imagePath="selectMultiplayerTypePopup.png" width="1024" height="2048">
+    <SubTexture name="btn_friends" x="1" y="1" width="855" height="447"/>
+    <SubTexture name="btn_random" x="1" y="450" width="855" height="447"/>
+    <SubTexture name="header" x="1" y="899" rotated="true" width="188" height="1073"/>
+</TextureAtlas>

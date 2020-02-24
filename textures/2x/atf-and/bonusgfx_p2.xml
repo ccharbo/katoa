@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:bf777f616e711824e9b5e11a97d22397:e69f1d81d7ae1e3398e19d115cee322f:4257185db91aa890300e1ba5efe30779$ -->
+<TextureAtlas imagePath="bonusgfx_p2.png">
+    <SubTexture name="bonus_icon_CestMoiQuiDecide" x="786" y="1640" width="441" height="364" frameX="-1" frameY="0" frameWidth="442" frameHeight="364"/>
+    <SubTexture name="bonus_icon_bg" x="1105" y="921" width="698" height="717" frameX="-1" frameY="-1" frameWidth="700" frameHeight="718"/>
+    <SubTexture name="bonus_hotSpot" x="1229" y="1640" width="469" height="362"/>
+    <SubTexture name="bonus_icon_AVousLHonneur" x="2" y="1381" width="385" height="490"/>
+    <SubTexture name="bonus_icon_Maxijauge" x="1208" y="2" width="783" height="730" frameX="-1" frameY="-23" frameWidth="784" frameHeight="753"/>
+    <SubTexture name="bonus_label_AVousLHonneur" x="2" y="2" width="1204" height="506" frameX="0" frameY="-7" frameWidth="1204" frameHeight="514"/>
+    <SubTexture name="bonus_label_CestMoiQuiDecide" x="2" y="812" width="936" height="567" frameX="-2" frameY="0" frameWidth="940" frameHeight="567"/>
+    <SubTexture name="bonus_label_Maxijauge" x="2" y="510" width="1178" height="300" frameX="-3" frameY="0" frameWidth="1184" frameHeight="308"/>
+    <SubTexture name="bonus_label_SOSJeton" x="389" y="1381" width="689" height="177" frameX="-1" frameY="0" frameWidth="692" frameHeight="177"/>
+    <SubTexture name="bonus_picto-cash" x="389" y="1640" width="395" height="401" frameX="0" frameY="-1" frameWidth="396" frameHeight="402"/>
+    <SubTexture name="bonus_spark" x="2" y="1873" width="118" height="122" frameX="0" frameY="-1" frameWidth="118" frameHeight="124"/>
+    <SubTexture name="bonus_star" x="1700" y="1640" width="320" height="311" frameX="-1" frameY="0" frameWidth="322" frameHeight="312"/>
+    <SubTexture name="bonus_textShadow" x="1182" y="734" width="857" height="185" frameX="-63" frameY="-14" frameWidth="983" frameHeight="213"/>
+    <SubTexture name="shop_redCircle" x="940" y="812" width="163" height="162" frameX="-1" frameY="-1" frameWidth="164" frameHeight="164"/>
+</TextureAtlas>

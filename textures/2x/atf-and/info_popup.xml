@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:08e3abc1f6c84a3879e0315f9ad77375:cb0d3c3cfad5f9f7d65968ad0efe6d66:14b6746e848049ff0490fe161050805c$ -->
+<TextureAtlas imagePath="info_popup.png" width="1024" height="1024">
+    <SubTexture name="champion_view" x="805" y="523" width="102" height="103" frameX="-1" frameY="-1" frameWidth="104" frameHeight="104"/>
+    <SubTexture name="credits_view" x="909" y="523" width="85" height="88" frameX="0" frameY="-1" frameWidth="86" frameHeight="90"/>
+    <SubTexture name="half_chair" x="2" y="474" width="801" height="284" frameX="0" frameY="0" frameWidth="802" frameHeight="284"/>
+    <SubTexture name="label_informaion" x="2" y="760" width="704" height="187" frameX="0" frameY="0" frameWidth="704" frameHeight="188"/>
+    <SubTexture name="number1" x="860" y="206" width="118" height="209" frameX="-1" frameY="0" frameWidth="120" frameHeight="210"/>
+    <SubTexture name="number2" x="860" y="2" width="162" height="202" frameX="-1" frameY="0" frameWidth="164" frameHeight="202"/>
+    <SubTexture name="progress_panel_bg" x="2" y="2" width="856" height="470" frameX="-1" frameY="0" frameWidth="858" frameHeight="470"/>
+    <SubTexture name="schampion_view" x="860" y="417" width="102" height="104" frameX="-1" frameY="0" frameWidth="104" frameHeight="104"/>
+</TextureAtlas>

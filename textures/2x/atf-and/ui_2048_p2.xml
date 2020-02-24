@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:145ab83f6583e9f87ecdf221b946f833:00696a0126e272406a2ac23f1730a37c:ec32267d66d9408a3637a3304add7585$ -->
+<TextureAtlas imagePath="ui_2048_p2.png" width="2048" height="2048">
+    <SubTexture name="avatar_background" x="956" y="2" width="477" height="477"/>
+    <SubTexture name="blank_avatar" x="1474" y="1510" width="363" height="429"/>
+    <SubTexture name="border_beaten_champion" x="928" y="481" width="417" height="425"/>
+    <SubTexture name="border_question_icon" x="2" y="806" width="418" height="426"/>
+    <SubTexture name="button" x="1438" y="847" width="367" height="260"/>
+    <SubTexture name="carre_icon" x="2" y="1234" width="393" height="399"/>
+    <SubTexture name="carre_lilac" x="397" y="1280" width="589" height="299"/>
+    <SubTexture name="carre_orange" x="847" y="908" width="589" height="299"/>
+    <SubTexture name="carre_red" x="988" y="1209" width="589" height="299"/>
+    <SubTexture name="cash_icon" x="1579" y="1109" width="393" height="399"/>
+    <SubTexture name="cost_bg" x="1831" y="366" width="184" height="113"/>
+    <SubTexture name="duo_icon" x="1079" y="1510" width="393" height="399"/>
+    <SubTexture name="icon_red_back_arrow" x="1435" y="2" width="556" height="362"/>
+    <SubTexture name="icon_reload" x="1435" y="366" width="394" height="479"/>
+    <SubTexture name="icon_tick" x="2" y="425" width="495" height="379"/>
+    <SubTexture name="label_jauge_pleine" x="2" y="1809" width="696" height="184" frameX="0" frameY="-20" frameWidth="696" frameHeight="204"/>
+    <SubTexture name="label_requestMode" x="2" y="1635" width="1075" height="172"/>
+    <SubTexture name="rect_blue_medium" x="2" y="2" width="952" height="421"/>
+    <SubTexture name="token_base" x="499" y="425" width="427" height="433"/>
+    <SubTexture name="token_full" x="422" y="860" width="423" height="418" frameX="0" frameY="0" frameWidth="468" frameHeight="461"/>
+    <SubTexture name="ui_icon_tvWithCross" x="1831" y="481" width="124" height="131"/>
+    <SubTexture name="ui_icon_tvWithPlay" x="1831" y="614" width="124" height="131"/>
+</TextureAtlas>

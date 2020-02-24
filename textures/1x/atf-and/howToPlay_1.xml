@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:1d28855e3c49132a68f3df20ee55d5e8:1370e78afb9f9b23ca52042548266555:a8261d6ea1a2db756535339c292c57ce$ -->
+<TextureAtlas imagePath="howToPlay_1.png" width="802" height="861">
+    <SubTexture name="howToPlay6" x="1" y="1" width="381" height="459"/>
+    <SubTexture name="howToPlay7" x="384" y="1" width="417" height="421" frameX="-13" frameY="0" frameWidth="453" frameHeight="421"/>
+    <SubTexture name="howToPlay8" x="417" y="424" width="381" height="407"/>
+    <SubTexture name="howToPlay9" x="1" y="462" rotated="true" width="414" height="398"/>
+</TextureAtlas>

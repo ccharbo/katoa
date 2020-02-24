@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:b8d0c304132988af0b673263fa153a42:a23f5ab18ef4fd5196b9b8fa2206ea2a:34903dfb6c13f76876374af139076462$ -->
+<TextureAtlas imagePath="bonusgfx_p1.png" width="2048" height="2048">
+    <SubTexture name="bonus_icon_AVousLHonneur_small" x="1720" y="538" width="124" height="125"/>
+    <SubTexture name="bonus_icon_CestMoiQuiDecide_small" x="1720" y="665" width="124" height="124"/>
+    <SubTexture name="bonus_icon_Credits_small" x="1858" y="529" width="130" height="126"/>
+    <SubTexture name="bonus_icon_Maxijauge_small" x="1858" y="168" width="160" height="124"/>
+    <SubTexture name="bonus_icon_NextLevel" x="2" y="1206" width="533" height="500"/>
+    <SubTexture name="bonus_label_offre_speciale" x="2" y="774" width="822" height="212"/>
+    <SubTexture name="shop_button_group" x="2" y="1708" width="358" height="198"/>
+    <SubTexture name="shop_button_group_rollover" x="362" y="1708" width="358" height="198"/>
+    <SubTexture name="shop_button_product" x="2" y="2" width="936" height="298"/>
+    <SubTexture name="shop_button_promo" x="2" y="302" width="858" height="470"/>
+    <SubTexture name="shop_button_promo_pink" x="862" y="538" width="856" height="472"/>
+    <SubTexture name="shop_clock" x="1720" y="952" width="212" height="252" frameX="-26" frameY="-20" frameWidth="259" frameHeight="291"/>
+    <SubTexture name="shop_cross_pink" x="862" y="302" width="66" height="66"/>
+    <SubTexture name="shop_icon_bonus" x="1858" y="294" width="145" height="134" frameX="-1" frameY="0" frameWidth="146" frameHeight="134"/>
+    <SubTexture name="shop_icon_question" x="1846" y="657" width="189" height="139" frameX="-3" frameY="-13" frameWidth="192" frameHeight="152"/>
+    <SubTexture name="shop_icons_promo" x="582" y="1012" width="336" height="168"/>
+    <SubTexture name="shop_infinity" x="1858" y="430" width="137" height="97"/>
+    <SubTexture name="shop_infinity_small" x="1997" y="430" width="48" height="34"/>
+    <SubTexture name="shop_label_Boutique" x="2" y="988" width="578" height="191" frameX="0" frameY="-12" frameWidth="578" frameHeight="203"/>
+    <SubTexture name="shop_product_icon_maxijauge" x="722" y="1616" width="515" height="399"/>
+    <SubTexture name="shop_product_icon_question" x="537" y="1206" width="390" height="408"/>
+    <SubTexture name="shop_promo_rect_pink" x="920" y="1012" width="416" height="158"/>
+    <SubTexture name="shop_rect_pink" x="940" y="2" width="916" height="534"/>
+    <SubTexture name="shop_redCircle" x="1858" y="2" width="164" height="164"/>
+    <SubTexture name="shop_timer_bg_pink_big" x="2" y="1908" width="406" height="114"/>
+    <SubTexture name="shop_timer_bg_pink_medium" x="1720" y="798" width="292" height="82"/>
+    <SubTexture name="shop_timer_bg_pink_small" x="1720" y="882" width="234" height="68"/>
+</TextureAtlas>

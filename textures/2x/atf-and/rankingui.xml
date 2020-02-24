@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:8a734ef4ae5eb2e163aabe8944b8d1a7:f6183cd6b3d1c80bcaf4f163561bd41b:0679a81615c6ed6ded32fc413d7c77cb$ -->
+<TextureAtlas imagePath="rankingui.png" width="1106" height="886">
+    <SubTexture name="ranking_chair_middle" x="903" y="485" width="160" height="162"/>
+    <SubTexture name="ranking_chair_small" x="905" y="773" width="100" height="102"/>
+    <SubTexture name="ranking_coins_middle" x="905" y="649" width="106" height="122"/>
+    <SubTexture name="ranking_coins_small" x="1013" y="649" width="66" height="76"/>
+    <SubTexture name="ranking_purpur_rect_big" x="1" y="1" width="1104" height="240"/>
+    <SubTexture name="ranking_purpur_rect_middle" x="1" y="485" width="540" height="200"/>
+    <SubTexture name="ranking_purpur_rect_small" x="543" y="485" width="358" height="200"/>
+    <SubTexture name="ranking_white_rect_big" x="1" y="243" width="1104" height="240"/>
+    <SubTexture name="ranking_white_rect_middle" x="1" y="687" width="542" height="198"/>
+    <SubTexture name="ranking_white_rect_small" x="545" y="687" width="358" height="198"/>
+</TextureAtlas>

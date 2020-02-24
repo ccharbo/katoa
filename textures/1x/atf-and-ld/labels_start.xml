@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:c7ba8058f9671e49819bde71d2f89671:b4291e91aa901eff0f5463d81d827ccc:f58de7605df3230ec421b3a907f00c62$ -->
+<TextureAtlas imagePath="labels_start.atf" width="2048" height="2048">
+    <SubTexture name="label_champion" x="795" y="2" width="631" height="237"/>
+    <SubTexture name="label_defi_attack" x="1428" y="221" width="480" height="402"/>
+    <SubTexture name="label_defi_defense" x="795" y="241" width="480" height="384"/>
+    <SubTexture name="label_question" x="1428" y="2" width="600" height="217"/>
+    <SubTexture name="label_super_champion_gold" x="2" y="2" width="791" height="420" frameX="0" frameY="0" frameWidth="797" frameHeight="420"/>
+</TextureAtlas>

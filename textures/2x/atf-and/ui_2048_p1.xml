@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:1801cd3833241e2f4e9c447405d20f53:54f89bc422e216cb69a02e99e9d51b78:2bef52642acfa83399d4913fe12aa810$ -->
+<TextureAtlas imagePath="ui_2048_p1.png" width="2048" height="2048">
+    <SubTexture name="arrow_r" x="1028" y="372" width="57" height="81"/>
+    <SubTexture name="back_button" x="244" y="1809" width="162" height="168"/>
+    <SubTexture name="bonus_HUD_Bonus_icon_fill" x="978" y="588" width="48" height="123" frameX="-27" frameY="-9" frameWidth="98" frameHeight="148"/>
+    <SubTexture name="bonus_HUD_Bonus_icon_fill2" x="1027" y="786" width="46" height="120"/>
+    <SubTexture name="bonus_HUD_bonus_icon" x="1130" y="1809" width="94" height="143" frameX="0" frameY="-2" frameWidth="96" frameHeight="147"/>
+    <SubTexture name="btn_invite" x="1179" y="221" width="858" height="182"/>
+    <SubTexture name="button_grey" x="2" y="862" width="532" height="182"/>
+    <SubTexture name="button_popup" x="2" y="1809" width="240" height="170"/>
+    <SubTexture name="card" x="661" y="1658" width="247" height="299"/>
+    <SubTexture name="carre_blue" x="1165" y="773" width="589" height="299"/>
+    <SubTexture name="carre_green" x="2" y="1074" width="589" height="299"/>
+    <SubTexture name="circle_hotspot" x="1756" y="773" width="285" height="220"/>
+    <SubTexture name="cross_blue" x="1028" y="623" width="54" height="54"/>
+    <SubTexture name="cross_fiolet" x="103" y="1981" width="62" height="62"/>
+    <SubTexture name="current_page_dot" x="1028" y="564" width="54" height="57"/>
+    <SubTexture name="duo_green" x="1174" y="405" width="858" height="182"/>
+    <SubTexture name="empty_page_dot" x="536" y="958" width="38" height="38"/>
+    <SubTexture name="full_settings_btn_active_bg" x="973" y="913" width="182" height="182"/>
+    <SubTexture name="futter" x="2" y="2" width="1280" height="136"/>
+    <SubTexture name="hotspot" x="1282" y="200" width="235" height="11"/>
+    <SubTexture name="icon_chair" x="418" y="1658" width="241" height="333"/>
+    <SubTexture name="icon_cross" x="593" y="718" width="378" height="378"/>
+    <SubTexture name="icon_fb" x="1028" y="455" width="56" height="107"/>
+    <SubTexture name="icon_fb_large" x="1752" y="1393" width="263" height="263"/>
+    <SubTexture name="icon_loading_point" x="1086" y="562" width="85" height="85"/>
+    <SubTexture name="icon_plus_in_circle" x="1653" y="1495" width="96" height="96"/>
+    <SubTexture name="icon_question" x="1756" y="995" width="275" height="396"/>
+    <SubTexture name="icon_requestMode" x="910" y="1658" width="219" height="149"/>
+    <SubTexture name="icon_sendMode" x="910" y="1809" width="218" height="149"/>
+    <SubTexture name="label_classement" x="2" y="718" width="588" height="142"/>
+    <SubTexture name="label_selectFriendPvp" x="1157" y="1074" width="522" height="146"/>
+    <SubTexture name="minitoken_1_base" x="1130" y="1954" width="91" height="92"/>
+    <SubTexture name="minitoken_5" x="1075" y="854" width="59" height="46"/>
+    <SubTexture name="news_action" x="1681" y="1218" width="67" height="76"/>
+    <SubTexture name="news_chear" x="661" y="1959" width="108" height="80"/>
+    <SubTexture name="news_exclamation" x="673" y="1098" width="91" height="74"/>
+    <SubTexture name="news_gift" x="1653" y="1296" width="98" height="82"/>
+    <SubTexture name="news_lighting" x="1089" y="1178" width="66" height="95" frameX="0" frameY="0" frameWidth="78" frameHeight="95"/>
+    <SubTexture name="news_marker1" x="536" y="862" width="45" height="46"/>
+    <SubTexture name="news_marker2" x="973" y="817" width="46" height="46"/>
+    <SubTexture name="news_marker3" x="973" y="865" width="46" height="46"/>
+    <SubTexture name="news_marker4" x="536" y="910" width="45" height="46"/>
+    <SubTexture name="news_ok" x="1179" y="140" width="101" height="79"/>
+    <SubTexture name="panel_diag_sparkle" x="2" y="1046" width="399" height="20" frameX="-1" frameY="0" frameWidth="400" frameHeight="20"/>
+    <SubTexture name="panel_top_sparkle" x="2" y="140" width="1175" height="34"/>
+    <SubTexture name="partager_border" x="978" y="713" width="48" height="48"/>
+    <SubTexture name="player_energy_bg" x="1284" y="2" width="735" height="196"/>
+    <SubTexture name="popup_bg_small" x="2" y="372" width="1024" height="214"/>
+    <SubTexture name="popup_small" x="2" y="588" width="974" height="128"/>
+    <SubTexture name="purpur_rect" x="885" y="1453" width="250" height="90"/>
+    <SubTexture name="rating_star" x="885" y="1545" width="117" height="111"/>
+    <SubTexture name="rect_fb_blue" x="1173" y="589" width="858" height="182"/>
+    <SubTexture name="rect_fiolet" x="593" y="1178" width="494" height="273"/>
+    <SubTexture name="rect_purpur2" x="2" y="176" width="1083" height="194"/>
+    <SubTexture name="rect_white" x="1157" y="1222" width="494" height="273"/>
+    <SubTexture name="schampionNameBg" x="418" y="1497" width="465" height="157"/>
+    <SubTexture name="settings_badge_btn" x="1131" y="1658" width="91" height="119"/>
+    <SubTexture name="settings_classement_btn" x="1224" y="1658" width="112" height="93"/>
+    <SubTexture name="settings_exclam" x="593" y="1098" width="78" height="78"/>
+    <SubTexture name="settings_faq_btn" x="1089" y="1361" width="63" height="89"/>
+    <SubTexture name="settings_head_btn" x="1082" y="735" width="81" height="117"/>
+    <SubTexture name="settings_mail_btn" x="2" y="1981" width="99" height="64"/>
+    <SubTexture name="settings_music_btn" x="1089" y="1275" width="64" height="84"/>
+    <SubTexture name="settings_open_arrow" x="536" y="998" width="36" height="68"/>
+    <SubTexture name="settings_open_btn" x="1087" y="348" width="85" height="212"/>
+    <SubTexture name="settings_settings_btn" x="1087" y="176" width="90" height="90"/>
+    <SubTexture name="settings_sound_btn" x="1087" y="268" width="89" height="78"/>
+    <SubTexture name="small_button" x="1004" y="1545" width="236" height="110"/>
+    <SubTexture name="switch_active_big" x="1681" y="1074" width="70" height="70"/>
+    <SubTexture name="switch_active_small" x="1028" y="732" width="52" height="52"/>
+    <SubTexture name="switch_green_bg" x="418" y="1375" width="156" height="79"/>
+    <SubTexture name="switch_handle" x="1084" y="649" width="84" height="84"/>
+    <SubTexture name="switch_red_bg" x="973" y="1097" width="157" height="79"/>
+    <SubTexture name="switch_unactive_big" x="1681" y="1146" width="70" height="70"/>
+    <SubTexture name="switch_unactive_small" x="973" y="763" width="52" height="52"/>
+    <SubTexture name="textinput_bg" x="1028" y="679" width="54" height="51"/>
+    <SubTexture name="token_gradient" x="2" y="1393" width="414" height="414"/>
+    <SubTexture name="token_selector" x="1653" y="1380" width="97" height="113"/>
+    <SubTexture name="token_separator" x="2021" y="2" width="6" height="6"/>
+</TextureAtlas>

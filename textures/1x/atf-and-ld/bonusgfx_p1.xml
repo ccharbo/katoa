@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:3807de9e1b2e954bceccabe30aae41b9:77219a5be0b3b90c183e382377532c82:0451450a631d2ddca42eb9a1eb3fc229$ -->
+<TextureAtlas imagePath="bonusgfx_p1.atf" width="1024" height="2048">
+    <SubTexture name="bonus_hotSpot" x="2" y="1522" width="235" height="182"/>
+    <SubTexture name="bonus_icon_AVousLHonneur" x="822" y="1525" width="193" height="246"/>
+    <SubTexture name="bonus_icon_AVousLHonneur_small" x="432" y="985" width="62" height="62"/>
+    <SubTexture name="bonus_icon_CestMoiQuiDecide" x="239" y="1522" width="221" height="182"/>
+    <SubTexture name="bonus_icon_CestMoiQuiDecide_small" x="432" y="1049" width="62" height="62"/>
+    <SubTexture name="bonus_icon_Credits_small" x="432" y="920" width="65" height="63"/>
+    <SubTexture name="bonus_icon_Maxijauge" x="606" y="110" width="392" height="366"/>
+    <SubTexture name="bonus_icon_Maxijauge_small" x="472" y="734" width="82" height="63"/>
+    <SubTexture name="bonus_icon_NextLevel" x="354" y="1270" width="266" height="250"/>
+    <SubTexture name="bonus_icon_bg" x="2" y="1090" width="350" height="359"/>
+    <SubTexture name="bonus_label_AVousLHonneur" x="2" y="2" width="602" height="255" frameX="0" frameY="-2" frameWidth="602" frameHeight="257"/>
+    <SubTexture name="bonus_label_CestMoiQuiDecide" x="2" y="413" width="470" height="286" frameX="0" frameY="-20" frameWidth="470" frameHeight="319"/>
+    <SubTexture name="bonus_label_Maxijauge" x="2" y="259" width="592" height="152" frameX="0" frameY="-23" frameWidth="592" frameHeight="178"/>
+    <SubTexture name="bonus_label_SOSJeton" x="496" y="1079" width="346" height="91" frameX="0" frameY="-53" frameWidth="346" frameHeight="162"/>
+    <SubTexture name="bonus_label_offre_speciale" x="606" y="2" width="411" height="106"/>
+    <SubTexture name="bonus_picto-cash" x="622" y="1518" width="198" height="201"/>
+    <SubTexture name="bonus_spark" x="929" y="984" width="59" height="62"/>
+    <SubTexture name="bonus_star" x="844" y="1165" width="161" height="156"/>
+    <SubTexture name="bonus_textShadow" x="499" y="984" width="428" height="93"/>
+    <SubTexture name="shop_button_group" x="843" y="1323" width="179" height="99"/>
+    <SubTexture name="shop_button_group_rollover" x="832" y="1424" width="179" height="99"/>
+    <SubTexture name="shop_button_product" x="2" y="701" width="468" height="149"/>
+    <SubTexture name="shop_button_promo" x="583" y="478" width="429" height="235"/>
+    <SubTexture name="shop_button_promo_pink" x="2" y="852" width="428" height="236"/>
+    <SubTexture name="shop_clock" x="474" y="449" width="107" height="127" frameX="-13" frameY="-10" frameWidth="131" frameHeight="147"/>
+    <SubTexture name="shop_cross_pink" x="432" y="852" width="33" height="33"/>
+    <SubTexture name="shop_icon_bonus" x="472" y="799" width="73" height="67"/>
+    <SubTexture name="shop_icon_question" x="474" y="578" width="95" height="70" frameX="-1" frameY="-6" frameWidth="96" frameHeight="76"/>
+    <SubTexture name="shop_icons_promo" x="844" y="1079" width="168" height="84"/>
+    <SubTexture name="shop_infinity" x="467" y="868" width="70" height="50"/>
+    <SubTexture name="shop_infinity_small" x="432" y="887" width="24" height="17"/>
+    <SubTexture name="shop_label_Boutique" x="354" y="1172" width="290" height="96"/>
+    <SubTexture name="shop_product_icon_maxijauge" x="2" y="1773" width="258" height="200"/>
+    <SubTexture name="shop_product_icon_question" x="646" y="1172" width="195" height="204"/>
+    <SubTexture name="shop_promo_rect_pink" x="622" y="1378" width="208" height="79"/>
+    <SubTexture name="shop_rect_pink" x="558" y="715" width="458" height="267"/>
+    <SubTexture name="shop_redCircle" x="474" y="650" width="82" height="82"/>
+    <SubTexture name="shop_timer_bg_pink_big" x="622" y="1459" width="203" height="57"/>
+    <SubTexture name="shop_timer_bg_pink_medium" x="2" y="1721" width="146" height="41"/>
+    <SubTexture name="shop_timer_bg_pink_small" x="474" y="413" width="117" height="34"/>
+</TextureAtlas>

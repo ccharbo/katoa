@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:0dbc09c455f5870f379c3e184bce40a2:1e5f05eb47215cd6ce70b514fae20122:57bf14cba20b432ca5974baf755009d5$ -->
+<TextureAtlas imagePath="ui_gold.png" width="1024" height="512">
+    <SubTexture name="chear_gold" x="2" y="2" width="668" height="505"/>
+    <SubTexture name="computer_gold" x="672" y="2" width="335" height="411"/>
+</TextureAtlas>
