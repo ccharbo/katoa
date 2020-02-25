@@ -7,13 +7,15 @@
 
     <!-- Safari related -->
     <link rel="apple-touch-icon" href="img/icon64.png"> <!-- specify an icon for the webpage -->
-    <link rel="apple-touch-startup-image" href="img/logo.png"> <!-- specify a launch screen image that is displayed while the web application launches -->
-    <meta name="apple-mobile-web-app-title" content="TLMVPSP"> <!-- specify a web application title for the launch icon -->
+    <link rel="apple-touch-startup-image" href="img/logo.png">
+    <!-- specify a launch screen image that is displayed while the web application launches -->
+    <meta name="apple-mobile-web-app-title" content="TLMVPSP">
+    <!-- specify a web application title for the launch icon -->
     <meta name="apple-mobile-web-app-capable" content="yes"> <!-- hiding Safari User Interface Components -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 
     <meta name="viewport"
-        content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
+          content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no"/>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -46,6 +48,38 @@
                 background: #F00;
             }
         }
+
+        /* https://bennettfeely.com/clippy */
+        /*.duo {*/
+        /*    !*position: absolute;*!*/
+        /*    !*left:-600px;*!*/
+        /*    clip-path: inset(0 0 85% 83.5%);*/
+
+        /* https://stackoverflow.com/a/493329/926451 */
+        .duo {
+            overflow: hidden;
+        }
+
+        .duo img {
+            margin: 0 0 -870px -855px; /* top right bottom left */
+        }
+
+        .carre {
+            overflow: hidden;
+        }
+
+        .carre img {
+            margin: -155px 0 -715px -855px; /* top right bottom left */
+        }
+
+        .cash {
+            overflow: hidden;
+        }
+
+        .cash img {
+            margin: -310px 0 -560px -855px; /* top right bottom left */
+        }
+
     </style>
 </head>
 
@@ -79,6 +113,11 @@
 <div id="progress1"></div>
 <div id="progress2"></div>
 <div id="progress3"></div>
+
+
+<div class="duo"><img src="textures/1x/atf-and/howToPlay.png"></div>
+<div class="carre"><img src="textures/1x/atf-and/howToPlay.png"></div>
+<div class="cash"><img src="textures/1x/atf-and/howToPlay.png"></div>
 
 
 <div class="progress">
