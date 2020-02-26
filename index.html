@@ -12,15 +12,15 @@
     <meta name="apple-mobile-web-app-title" content="TLMVPSP">
     <!-- specify a web application title for the launch icon -->
     <meta name="apple-mobile-web-app-capable" content="yes"> <!-- hiding Safari User Interface Components -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
     <meta name="viewport"
-          content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no"/>
+        content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <style>
         .progressbar {
@@ -43,201 +43,221 @@
                 width: 0%;
                 background: #0F0;
             }
+
             100% {
                 width: 100%;
                 background: #F00;
             }
         }
-
-        /* https://bennettfeely.com/clippy */
-        /*.duo {*/
-        /*    !*position: absolute;*!*/
-        /*    !*left:-600px;*!*/
-        /*    clip-path: inset(0 0 85% 83.5%);*/
-
-        /* https://stackoverflow.com/a/493329/926451 */
-        .duo {
-            overflow: hidden;
-        }
-
-        .duo img {
-            margin: 0 0 -870px -855px; /* top right bottom left */
-        }
-
-        .carre {
-            overflow: hidden;
-        }
-
-        .carre img {
-            margin: -155px 0 -715px -855px; /* top right bottom left */
-        }
-
-        .cash {
-            overflow: hidden;
-        }
-
-        .cash img {
-            margin: -310px 0 -560px -855px; /* top right bottom left */
-        }
-
     </style>
 </head>
 
 <body>
 
-<audio id="good-answer" src="sounds/good-answer.mp3"></audio>
-<audio id="bad-answer" src="sounds/bad-answer.mp3"></audio>
-<audio id="chrono" src="sounds/chrono.mp3"></audio>
-<audio id="chrono-end" src="sounds/chrono-end.mp3"></audio>
+    <audio id="good-answer" src="sounds/good-answer.mp3"></audio>
+    <audio id="bad-answer" src="sounds/bad-answer.mp3"></audio>
+    <audio id="chrono" src="sounds/chrono.mp3"></audio>
+    <audio id="chrono-end" src="sounds/chrono-end.mp3"></audio>
 
-<div id="main"></div>
+    <div id="main"></div>
 
-<button type="button" class="btn btn-outline-primary">Joueur</button>
-&nbsp;
-<button type="button" class="btn btn-primary" onclick="start('duo')"><i class="fa fa-dot-circle-o"></i> Duo</button>
-<button type="button" class="btn btn-primary" onclick="start('square')"><i class="fa fa-stop-circle-o"></i>
-    Carré
-</button>
-<button type="button" class="btn btn-primary" onclick="start('cash')"><i class="fa fa-circle-o"></i> Cash</button>
-&nbsp;
-<button type="button" class="btn btn-success" onclick="goodAnswer()"><i class="fa fa-check"></i> Bonne
-    réponse
-</button>
-<button type="button" class="btn btn-danger" onclick="badAnswer()"><i class="fa fa-times"></i> Mauvaise
-    réponse
-</button>
+    <button type="button" class="btn btn-outline-primary">Joueur</button>
+    &nbsp;
+    <button type="button" class="btn btn-primary" onclick="start('duo')"><i class="fa fa-dot-circle-o"></i> Duo</button>
+    <button type="button" class="btn btn-primary" onclick="start('square')"><i class="fa fa-stop-circle-o"></i>
+        Carré
+    </button>
+    <button type="button" class="btn btn-primary" onclick="start('cash')"><i class="fa fa-circle-o"></i> Cash</button>
+    &nbsp;
+    <button type="button" class="btn btn-success" onclick="goodAnswer()"><i class="fa fa-check"></i> Bonne
+        réponse
+    </button>
+    <button type="button" class="btn btn-danger" onclick="badAnswer()"><i class="fa fa-times"></i> Mauvaise
+        réponse
+    </button>
 
-<br>
-<br>
+    <br>
+    <br>
 
-<div id="progress1"></div>
-<div id="progress2"></div>
-<div id="progress3"></div>
+    <div id="progress1"></div>
+    <div id="progress2"></div>
+    <div id="progress3"></div>
 
+    <div id="buttons"></div>
 
-<div class="duo"><img src="textures/1x/atf-and/howToPlay.png"></div>
-<div class="carre"><img src="textures/1x/atf-and/howToPlay.png"></div>
-<div class="cash"><img src="textures/1x/atf-and/howToPlay.png"></div>
+    <div class="progress">
+        <div class="progress-bar" id="progress-bar" style="width: 20%"></div>
+    </div>
 
+    <br>
+    <br>
 
-<div class="progress">
-    <div class="progress-bar" id="progress-bar" style="width: 20%"></div>
-</div>
-
-<br>
-<br>
-
-<a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal"><i class="fa fa-plus-circle"></i> Nouveau
-    joueur</a>
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Nouveau joueur</h5>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="name">Nom</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Nom du joueur">
+    <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal"><i class="fa fa-plus-circle"></i> Nouveau
+        joueur</a>
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nouveau joueur</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                <button type="button" class="btn btn-primary"
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Nom du joueur">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary"
                         onclick="newPlayer(document.getElementById('inputName').value)">Créer
-                </button>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script type="text/javascript">
-    var players = [];
+    <script type="text/javascript">
+        class Button {
+            constructor(parentId, margin) {
+                console.log("Button CTOR");
 
-    function newPlayer(name) {
-        players.push(name);
-        console.log("players", players);
-        update();
-    }
+                var div = document.createElement("div");
+                var img = document.createElement("img");
+                div.appendChild(img)
 
-    function update() {
-        players.forEach(player => {
-            console.log("player", player);
-        })
-    }
+                img.src = "textures/1x/atf-and/howToPlay.png";
+                img.onclick = () => img.style.opacity = 0.3;
 
-    function rename() {
+                // https://stackoverflow.com/a/493329/926451
+                div.style.overflow = "hidden";
+                img.style.margin = margin;
 
-    }
+                document.getElementById(parentId).appendChild(div);
+            }
+        }
 
-    function start(option, player) {
-        console.log("start", "option", option);
-        var chrono = document.getElementById("chrono");
+        class DuoButton extends Button {
+            constructor(parentId) { super(parentId, "0 0 -870px -855px") }
+        }
 
-        if (chrono.paused) {
-            chrono.currentTime = 1.3;
-            chrono.play();
-            createProgressbar("progress1", "10s", () => alert("Time's up"));
-            // play.removeClass('glyphicon-play-circle');
-            // play.addClass('glyphicon-pause');
-        } else {
+        class CarreButton extends Button {
+            constructor(parentId) { super(parentId, "-155px 0 -715px -855px") }
+        }
+
+        class CashButton extends Button {
+            constructor(parentId) { super(parentId, "-310px 0 -560px -855px") }
+        }
+
+        class Buttons {
+            duo; carre; cash;
+            constructor(parentId) {
+                console.log("Buttons CTOR");
+                this.duo = new DuoButton(parentId);
+                this.carre = new CarreButton(parentId);
+                this.cash = new CashButton(parentId);
+            }
+        }
+
+        function toggle(element) {
+            var opacity = 1
+            if (element._active) {
+                opacity = 0.3;
+                element._active = false;
+            } else {
+                element._active = true;
+            }
+            element.style.opacity = opacity;
+        }
+
+        var players = [];
+
+        function newPlayer(name) {
+            players.push(name);
+            console.log("players", players);
+            update();
+        }
+
+        function update() {
+            players.forEach(player => {
+                console.log("player", player);
+            })
+        }
+
+        function rename() {
+
+        }
+
+        function start(option, player) {
+            console.log("start", "option", option);
+            var chrono = document.getElementById("chrono");
+
+            if (chrono.paused) {
+                chrono.currentTime = 1.3;
+                chrono.play();
+                createProgressbar("progress1", "10s", () => alert("Time's up"));
+                // play.removeClass('glyphicon-play-circle');
+                // play.addClass('glyphicon-pause');
+            } else {
+                chrono.pause();
+                chrono.currentTime = 0;
+                // play.addClass('glyphicon-play-circle');
+                // play.removeClass('glyphicon-pause');
+            }
+        }
+
+        var i = 0;
+
+        function playAudioAndStopChrono(id, startTime) {
+            var chrono = document.getElementById("chrono");
+            var sound = document.getElementById(id);
+
             chrono.pause();
-            chrono.currentTime = 0;
-            // play.addClass('glyphicon-play-circle');
-            // play.removeClass('glyphicon-pause');
-        }
-    }
-
-    var i = 0;
-
-    function playAudioAndStopChrono(id, startTime) {
-        var chrono = document.getElementById("chrono");
-        var sound = document.getElementById(id);
-
-        chrono.pause();
-        sound.currentTime = startTime;
-        sound.play();
-    }
-
-    function goodAnswer() {
-        console.log("good-answer");
-        playAudioAndStopChrono("good-answer", .5);
-    }
-
-    function badAnswer() {
-        console.log("bad-answer");
-        playAudioAndStopChrono("bad-answer", 0);
-    }
-
-    function createProgressbar(id, duration, callback) {
-        var progressbar = document.getElementById(id);
-        progressbar.className = 'progressbar';
-
-        var progressbarinner = document.createElement('div');
-        progressbarinner.className = 'inner';
-        progressbarinner.style.animationDuration = duration;
-
-        if (typeof (callback) === 'function') {
-            progressbarinner.addEventListener('animationend', callback);
+            sound.currentTime = startTime;
+            sound.play();
         }
 
-        progressbar.appendChild(progressbarinner);
-        progressbarinner.style.animationPlayState = 'running';
-    }
+        function goodAnswer() {
+            console.log("good-answer");
+            playAudioAndStopChrono("good-answer", .5);
+        }
 
-    addEventListener('load', function () {
-        console.log("load");
-    });
-</script>
+        function badAnswer() {
+            console.log("bad-answer");
+            playAudioAndStopChrono("bad-answer", 0);
+        }
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        function createProgressbar(id, duration, callback) {
+            var progressbar = document.getElementById(id);
+            progressbar.className = 'progressbar';
+
+            var progressbarinner = document.createElement('div');
+            progressbarinner.className = 'inner';
+            progressbarinner.style.animationDuration = duration;
+
+            if (typeof (callback) === 'function') {
+                progressbarinner.addEventListener('animationend', callback);
+            }
+
+            progressbar.appendChild(progressbarinner);
+            progressbarinner.style.animationPlayState = 'running';
+        }
+
+        addEventListener("load", () => {
+            console.log("load");
+            new Buttons("buttons");
+
+        });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
