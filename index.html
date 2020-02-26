@@ -119,15 +119,19 @@
 
     <script type="text/javascript">
         class Button {
-            constructor(parentId, margin) {
+            buttons;
+
+            constructor(parentId, margin, buttons) {
                 console.log("Button CTOR");
+
+                this.buttons = buttons;
 
                 var div = document.createElement("div");
                 var img = document.createElement("img");
                 div.appendChild(img)
 
                 img.src = "textures/1x/atf-and/howToPlay.png";
-                img.onclick = () => img.style.opacity = 0.3;
+                img.onclick = () => this.buttons.click(img);
 
                 // https://stackoverflow.com/a/493329/926451
                 div.style.overflow = "hidden";
@@ -138,24 +142,29 @@
         }
 
         class DuoButton extends Button {
-            constructor(parentId) { super(parentId, "0 0 -870px -855px") }
+            constructor(parentId, buttons) { super(parentId, "0 0 -870px -855px", buttons) }
         }
 
         class CarreButton extends Button {
-            constructor(parentId) { super(parentId, "-155px 0 -715px -855px") }
+            constructor(parentId, buttons) { super(parentId, "-155px 0 -715px -855px", buttons) }
         }
 
         class CashButton extends Button {
-            constructor(parentId) { super(parentId, "-310px 0 -560px -855px") }
+            constructor(parentId, buttons) { super(parentId, "-310px 0 -560px -855px", buttons) }
         }
 
         class Buttons {
             duo; carre; cash;
             constructor(parentId) {
                 console.log("Buttons CTOR");
-                this.duo = new DuoButton(parentId);
-                this.carre = new CarreButton(parentId);
-                this.cash = new CashButton(parentId);
+                this.duo = new DuoButton(parentId, this);
+                this.carre = new CarreButton(parentId, this);
+                this.cash = new CashButton(parentId, this);
+            }
+
+            click(img) {
+                console.log("button clicked", button);
+                img.style.opacity = 0.3
             }
         }
 
