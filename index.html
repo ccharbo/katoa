@@ -61,6 +61,8 @@
 
     <div id="main"></div>
 
+    <!-- https://www.w3schools.com/css/css_icons.asp -->
+
     <button type="button" class="btn btn-outline-primary">Joueur</button>
     &nbsp;
     <button type="button" class="btn btn-primary" onclick="start('duo')"><i class="fa fa-dot-circle-o"></i> Duo</button>
@@ -85,14 +87,14 @@
 
     <div id="buttons"></div>
 
-    <div class="progress">
+    <!-- <div class="progress">
         <div class="progress-bar" id="progress-bar" style="width: 20%"></div>
-    </div>
+    </div> -->
 
     <br>
     <br>
 
-    <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal"><i class="fa fa-plus-circle"></i> Nouveau
+    <!-- <a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal"><i class="fa fa-plus-circle"></i> Nouveau
         joueur</a>
     <div id="myModal" class="modal fade">
         <div class="modal-dialog">
@@ -115,42 +117,42 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script type="text/javascript">
         class Button {
             buttons;
 
-            constructor(parentId, margin, buttons) {
+            constructor(parentId, objectPosition, buttons) {
                 console.log("Button CTOR");
 
                 this.buttons = buttons;
 
-                var div = document.createElement("div");
+                // https://css-tricks.com/spriting-img/
                 var img = document.createElement("img");
-                div.appendChild(img)
-
                 img.src = "textures/1x/atf-and/howToPlay.png";
+                img.style.width = "155px";
+                img.style.height = "155px";
+                img.style.objectFit = "none";
+                img.style.objectPosition = objectPosition;
+
                 img.onclick = () => this.buttons.click(img);
 
-                // https://stackoverflow.com/a/493329/926451
-                div.style.overflow = "hidden";
-                img.style.margin = margin;
 
-                document.getElementById(parentId).appendChild(div);
+                document.getElementById(parentId).appendChild(img);
             }
         }
 
         class DuoButton extends Button {
-            constructor(parentId, buttons) { super(parentId, "0 0 -870px -855px", buttons) }
+            constructor(parentId, buttons) { super(parentId, "-855px 0", buttons) }
         }
 
         class CarreButton extends Button {
-            constructor(parentId, buttons) { super(parentId, "-155px 0 -715px -855px", buttons) }
+            constructor(parentId, buttons) { super(parentId, "-855px -155px", buttons) }
         }
 
         class CashButton extends Button {
-            constructor(parentId, buttons) { super(parentId, "-310px 0 -560px -855px", buttons) }
+            constructor(parentId, buttons) { super(parentId, "-855px -310px", buttons) }
         }
 
         class Buttons {
@@ -163,7 +165,7 @@
             }
 
             click(img) {
-                console.log("button clicked", button);
+                console.log("button clicked", img);
                 img.style.opacity = 0.3
             }
         }
@@ -255,7 +257,6 @@
         addEventListener("load", () => {
             console.log("load");
             new Buttons("buttons");
-
         });
 
     </script>
