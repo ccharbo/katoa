@@ -21,6 +21,23 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        @font-face {
+            font-family: "DINPro";
+            src: url("fonts/DINPro-Regular.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: "DINProMedium";
+            src: url("fonts/DINPro-Medium.otf") format("opentype");
+        }
+
+        @font-face {
+            font-family: "DIN";
+            src: url("fonts/DIN-BoldAlternate.otf") format("opentype");
+        }
+    </style>
 </head>
 
 <body>
@@ -58,21 +75,23 @@
     </div> -->
 
     <script type="text/javascript">
-        function imageFromTexture(src, x, y, width, height, zoom) {
-            img = document.createElement("img")
-            img.src = src
-            img.style.width = `${width}px`
-            img.style.height = `${height}px`
-            img.style.objectFit = "none"
-            img.style.objectPosition = `-${x}px -${y}px`
-            if (zoom) img.style.zoom = zoom
+        class Image {
+            static createFromTexture(src, x, y, width, height, zoom) {
+                var img = document.createElement("img")
+                img.src = src
+                img.style.width = `${width}px`
+                img.style.height = `${height}px`
+                img.style.objectFit = "none"
+                img.style.objectPosition = `-${x}px -${y}px`
+                if (zoom) img.style.zoom = zoom
 
-            return img
+                return img
+            }
         }
 
         class Button {
             constructor(game, src, x, y, width, height, zoom) {
-                this.img = imageFromTexture(src, x, y, width, height, zoom)
+                this.img = Image.createFromTexture(src, x, y, width, height, zoom)
                 this.img.onclick = () => game.startGame(this);
             }
 
@@ -109,8 +128,24 @@
 
         class Player {
             constructor(game, name) {
-                this.img = imageFromTexture("textures/1x/atf-and/rankingui.png", 555, 102, 270, 100)
-                this.img.onclick = () => game.renamePlayer(this);
+                var text = document.createElement("div")
+                text.textContent = name
+                text.style.fontFamily = "DIN"
+                text.style.position = "absolute"
+                text.style.top = "50%"
+                text.style.left = "50%"
+                text.style.transform = "translate(-50%, -50%)"
+                text.style.userSelect = "none"
+                
+                var img = Image.createFromTexture("textures/1x/atf-and/rankingui.png", 555, 102, 270, 100)
+                // img.onclick = () => game.renamePlayer(this);
+
+                this.div = document.createElement("div")
+                this.div.style.position = "relative"
+                this.div.style.textAlign = "center"
+                this.div.style.width = "270px"
+                this.div.append(text, img)
+
                 console.log("player", name)
             }
         }
@@ -134,7 +169,7 @@
 
                 // UI
                 document.getElementById(parentId).append(
-                    this.players[0].img,
+                    this.players[0].div,
                     this.duo.img,
                     this.carre.img,
                     this.cash.img,
