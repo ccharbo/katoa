@@ -54,29 +54,17 @@
 
 <body>
 
-    <audio id="good-answer" src="sounds/good-answer.mp3"></audio>
-    <audio id="bad-answer" src="sounds/bad-answer.mp3"></audio>
-    <audio id="chrono" src="sounds/chrono.mp3"></audio>
-    <audio id="chrono-end" src="sounds/chrono-end.mp3"></audio>
+    <audio id="sound-chrono" src="sounds/chrono.mp3"></audio>
+    <audio id="sound-chrono-end" src="sounds/chrono-end.mp3"></audio>
+    <audio id="sound-good-answer" src="sounds/good-answer.mp3"></audio>
+    <audio id="sound-bad-answer" src="sounds/bad-answer.mp3"></audio>
 
     <div id="main"></div>
 
     <!-- https://www.w3schools.com/css/css_icons.asp -->
 
-    <button type="button" class="btn btn-outline-primary">Joueur</button>
+    <button type="button" class="btn btn-outline-primary" onclick="newPlayer();">Joueur</button>
     &nbsp;
-    <button type="button" class="btn btn-primary" onclick="start('duo')"><i class="fa fa-dot-circle-o"></i> Duo</button>
-    <button type="button" class="btn btn-primary" onclick="start('square')"><i class="fa fa-stop-circle-o"></i>
-        Carré
-    </button>
-    <button type="button" class="btn btn-primary" onclick="start('cash')"><i class="fa fa-circle-o"></i> Cash</button>
-    &nbsp;
-    <button type="button" class="btn btn-success" onclick="goodAnswer()"><i class="fa fa-check"></i> Bonne
-        réponse
-    </button>
-    <button type="button" class="btn btn-danger" onclick="badAnswer()"><i class="fa fa-times"></i> Mauvaise
-        réponse
-    </button>
 
     <br>
     <br>
@@ -84,8 +72,6 @@
     <div id="progress1"></div>
     <div id="progress2"></div>
     <div id="progress3"></div>
-
-    <div id="buttons"></div>
 
     <!-- <div class="progress">
         <div class="progress-bar" id="progress-bar" style="width: 20%"></div>
@@ -120,23 +106,22 @@
     </div> -->
 
     <script type="text/javascript">
+        function imageFromTexture(src, x, y, width, height, zoom) {
+            img = document.createElement("img")
+            img.src = src
+            img.style.width = `${width}px`
+            img.style.height = `${height}px`
+            img.style.objectFit = "none"
+            img.style.objectPosition = `-${x}px -${y}px`
+            if (zoom) img.style.zoom = zoom
+
+            return img
+        }
+
         class Button {
-            buttons;
-            img;
-
-            constructor(parentId, objectPosition, buttons) {
-                this.buttons = buttons;
-
-                // https://css-tricks.com/spriting-img/
-                this.img = document.createElement("img");
-                this.img.src = "textures/1x/atf-and/howToPlay.png";
-                this.img.style.width = "155px";
-                this.img.style.height = "155px";
-                this.img.style.objectFit = "none";
-                this.img.style.objectPosition = objectPosition;
-
-                this.img.onclick = () => this.buttons.click(this);
-
+            constructor(parentId, game, src, x, y, width, height, zoom) {
+                this.img = imageFromTexture(src, x, y, width, height, zoom)
+                this.img.onclick = () => game.click(this);
                 document.getElementById(parentId).appendChild(this.img);
             }
 
@@ -144,46 +129,67 @@
             brighten() { this.img.style.opacity = 1; }
         }
 
-        class DuoButton extends Button {
-            constructor(parentId, buttons) { super(parentId, "-855px 0", buttons) }
-        }
+        class Duo extends Button { constructor(parentId, game) { super(parentId, game, "textures/1x/atf-and/howToPlay.png", 855, 0, 150, 150) } }
+        class Carre extends Button { constructor(parentId, game) { super(parentId, game, "textures/1x/atf-and/howToPlay.png", 855, 155, 150, 150) } }
+        class Cash extends Button { constructor(parentId, game) { super(parentId, game, "textures/1x/atf-and/howToPlay.png", 855, 310, 150, 150) } }
+        class Good extends Button { constructor(parentId, game) { super(parentId, game, "textures/1x/atf-and/missiongfx.png", 588, 338, 313, 253, "40%") } }
+        class Bad extends Button { constructor(parentId, game) { super(parentId, game, "textures/1x/atf-and/missiongfx.png", 477, 593, 259, 288, "40%") } }
 
-        class CarreButton extends Button {
-            constructor(parentId, buttons) { super(parentId, "-855px -155px", buttons) }
-        }
-
-        class CashButton extends Button {
-            constructor(parentId, buttons) { super(parentId, "-855px -310px", buttons) }
-        }
-
-        class Buttons {
-            duo; carre; cash;
+        class Game {
             constructor(parentId) {
-                this.duo = new DuoButton(parentId, this)
-                this.carre = new CarreButton(parentId, this)
-                this.cash = new CashButton(parentId, this)
+                this.duo = new Duo(parentId, this)
+                this.carre = new Carre(parentId, this)
+                this.cash = new Cash(parentId, this)
+                this.good = new Good(parentId, this)
+                this.bad = new Bad(parentId, this)
+
+                this.sounds = {
+                    chrono: document.getElementById("sound-chrono"),
+                    good: document.getElementById("sound-good-answer"),
+                    bad: document.getElementById("sound-bad-answer"),
+                }
             }
 
             click(button) {
-                [this.duo, this.carre, this.cash].forEach(b => { if (button == b) { b.brighten() } else { b.fade() } })
+                [this.duo, this.carre, this.cash].forEach(b => {
+                    if (button == b) {
+                        b.brighten()
+
+                        if (this.sounds.chrono.paused) {
+                            this.sounds.chrono.currentTime = 1.3
+                            this.sounds.chrono.play()
+                        } else {
+                            this.sounds.chrono.pause()
+                        }
+                    } else {
+                        b.fade()
+                    }
+                })
+
+                if (button == this.good) {
+                    this.sounds.chrono.pause()
+                    this.sounds.good.currentTime = .5
+                    this.sounds.good.play()
+                }
+
+                if (button == this.bad) {
+                    this.sounds.chrono.pause()
+                    this.sounds.bad.currentTime = 0
+                    this.sounds.bad.play()
+                }
             }
         }
 
-        function toggle(element) {
-            var opacity = 1
-            if (element._active) {
-                opacity = 0.3;
-                element._active = false;
-            } else {
-                element._active = true;
-            }
-            element.style.opacity = opacity;
+        class Player {
+            name;
+            constructor(name) { this.name = name }
         }
 
         var players = [];
 
         function newPlayer(name) {
-            players.push(name);
+            var player = new Player(name);
+            players.push(player);
             console.log("players", players);
             update();
         }
@@ -192,49 +198,6 @@
             players.forEach(player => {
                 console.log("player", player);
             })
-        }
-
-        function rename() {
-
-        }
-
-        function start(option, player) {
-            console.log("start", "option", option);
-            var chrono = document.getElementById("chrono");
-
-            if (chrono.paused) {
-                chrono.currentTime = 1.3;
-                chrono.play();
-                createProgressbar("progress1", "10s", () => alert("Time's up"));
-                // play.removeClass('glyphicon-play-circle');
-                // play.addClass('glyphicon-pause');
-            } else {
-                chrono.pause();
-                chrono.currentTime = 0;
-                // play.addClass('glyphicon-play-circle');
-                // play.removeClass('glyphicon-pause');
-            }
-        }
-
-        var i = 0;
-
-        function playAudioAndStopChrono(id, startTime) {
-            var chrono = document.getElementById("chrono");
-            var sound = document.getElementById(id);
-
-            chrono.pause();
-            sound.currentTime = startTime;
-            sound.play();
-        }
-
-        function goodAnswer() {
-            console.log("good-answer");
-            playAudioAndStopChrono("good-answer", .5);
-        }
-
-        function badAnswer() {
-            console.log("bad-answer");
-            playAudioAndStopChrono("bad-answer", 0);
         }
 
         function createProgressbar(id, duration, callback) {
@@ -254,8 +217,7 @@
         }
 
         addEventListener("load", () => {
-            console.log("load");
-            new Buttons("buttons");
+            new Game("main");
         });
 
     </script>
