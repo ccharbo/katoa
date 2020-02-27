@@ -192,7 +192,11 @@
 
 <body>
     <div id="main"></div>
-    <script>new Game("main")</script>
+    <script>
+        console.log("Before new Game")
+        new Game("main")
+        console.log("After new Game")
+    </script>
 </body>
 
 </html>
