@@ -122,25 +122,26 @@
     <script type="text/javascript">
         class Button {
             buttons;
+            img;
 
             constructor(parentId, objectPosition, buttons) {
-                console.log("Button CTOR");
-
                 this.buttons = buttons;
 
                 // https://css-tricks.com/spriting-img/
-                var img = document.createElement("img");
-                img.src = "textures/1x/atf-and/howToPlay.png";
-                img.style.width = "155px";
-                img.style.height = "155px";
-                img.style.objectFit = "none";
-                img.style.objectPosition = objectPosition;
+                this.img = document.createElement("img");
+                this.img.src = "textures/1x/atf-and/howToPlay.png";
+                this.img.style.width = "155px";
+                this.img.style.height = "155px";
+                this.img.style.objectFit = "none";
+                this.img.style.objectPosition = objectPosition;
 
-                img.onclick = () => this.buttons.click(img);
+                this.img.onclick = () => this.buttons.click(this);
 
-
-                document.getElementById(parentId).appendChild(img);
+                document.getElementById(parentId).appendChild(this.img);
             }
+
+            fade() { this.img.style.opacity = 0.2; }
+            brighten() { this.img.style.opacity = 1; }
         }
 
         class DuoButton extends Button {
@@ -158,15 +159,13 @@
         class Buttons {
             duo; carre; cash;
             constructor(parentId) {
-                console.log("Buttons CTOR");
-                this.duo = new DuoButton(parentId, this);
-                this.carre = new CarreButton(parentId, this);
-                this.cash = new CashButton(parentId, this);
+                this.duo = new DuoButton(parentId, this)
+                this.carre = new CarreButton(parentId, this)
+                this.cash = new CashButton(parentId, this)
             }
 
-            click(img) {
-                console.log("button clicked", img);
-                img.style.opacity = 0.3
+            click(button) {
+                [this.duo, this.carre, this.cash].forEach(b => { if (button == b) { b.brighten() } else { b.fade() } })
             }
         }
 
