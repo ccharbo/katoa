@@ -24,12 +24,6 @@
 </head>
 
 <body>
-
-    <audio id="sound-chrono" src="sounds/chrono.mp3"></audio>
-    <audio id="sound-chrono-end" src="sounds/chrono-end.mp3"></audio>
-    <audio id="sound-good-answer" src="sounds/good-answer.mp3"></audio>
-    <audio id="sound-bad-answer" src="sounds/bad-answer.mp3"></audio>
-
     <div id="main"></div>
 
     <!-- https://www.w3schools.com/css/css_icons.asp -->
@@ -77,38 +71,79 @@
         }
 
         class Button {
-            constructor(parentId, game, src, x, y, width, height, zoom) {
+            constructor(game, src, x, y, width, height, zoom) {
                 this.img = imageFromTexture(src, x, y, width, height, zoom)
-                this.img.onclick = () => game.click(this);
-                document.getElementById(parentId).appendChild(this.img);
+                this.img.onclick = () => game.startGame(this);
             }
 
             fade() { this.img.style.opacity = 0.2; }
             brighten() { this.img.style.opacity = 1; }
         }
 
-        class Duo extends Button { constructor(parentId, game) { super(parentId, game, "textures/1x/atf-and/howToPlay.png", 855, 0, 150, 150) } }
-        class Carre extends Button { constructor(parentId, game) { super(parentId, game, "textures/1x/atf-and/howToPlay.png", 855, 155, 150, 150) } }
-        class Cash extends Button { constructor(parentId, game) { super(parentId, game, "textures/1x/atf-and/howToPlay.png", 855, 310, 150, 150) } }
-        class Good extends Button { constructor(parentId, game) { super(parentId, game, "textures/1x/atf-and/missiongfx.png", 588, 338, 313, 253, "40%") } }
-        class Bad extends Button { constructor(parentId, game) { super(parentId, game, "textures/1x/atf-and/missiongfx.png", 477, 593, 259, 288, "40%") } }
+        class Duo extends Button { constructor(game) { super(game, "textures/1x/atf-and/howToPlay.png", 855, 0, 150, 150) } }
+        class Carre extends Button { constructor(game) { super(game, "textures/1x/atf-and/howToPlay.png", 855, 155, 150, 150) } }
+        class Cash extends Button { constructor(game) { super(game, "textures/1x/atf-and/howToPlay.png", 855, 310, 150, 150) } }
+
+        class Good extends Button {
+            constructor(game) {
+                super(game, "textures/1x/atf-and/missiongfx.png", 588, 338, 313, 253, "40%")
+                this.img.onclick = () => game.goodAnswer()
+            }
+        }
+
+        class Bad extends Button {
+            constructor(game) {
+                super(game, "textures/1x/atf-and/missiongfx.png", 477, 593, 259, 288, "40%")
+                this.img.onclick = () => game.badAnswer()
+            }
+        }
+
+        class Audio {
+            static create(src) {
+                var audio = document.createElement("audio")
+                audio.src = src
+                audio.preload = true
+                return audio
+            }
+        }
+
+        class Player {
+            constructor(game, name) {
+                this.img = imageFromTexture("textures/1x/atf-and/rankingui.png", 555, 102, 270, 100)
+                this.img.onclick = () => game.renamePlayer(this);
+                console.log("player", name)
+            }
+        }
 
         class Game {
             constructor(parentId) {
-                this.duo = new Duo(parentId, this)
-                this.carre = new Carre(parentId, this)
-                this.cash = new Cash(parentId, this)
-                this.good = new Good(parentId, this)
-                this.bad = new Bad(parentId, this)
+                this.duo = new Duo(this)
+                this.carre = new Carre(this)
+                this.cash = new Cash(this)
+                this.good = new Good(this)
+                this.bad = new Bad(this)
+
+                this.players = [new Player(this, "my name")]
 
                 this.sounds = {
-                    chrono: document.getElementById("sound-chrono"),
-                    good: document.getElementById("sound-good-answer"),
-                    bad: document.getElementById("sound-bad-answer"),
+                    chrono: Audio.create("sounds/chrono.mp3"),
+                    chronoEnd: Audio.create("sounds/chrono-end.mp3"),
+                    good: Audio.create("sounds/good-answer.mp3"),
+                    bad: Audio.create("sounds/bad-answer.mp3"),
                 }
+
+                // UI
+                document.getElementById(parentId).append(
+                    this.players[0].img,
+                    this.duo.img,
+                    this.carre.img,
+                    this.cash.img,
+                    this.good.img,
+                    this.bad.img
+                )
             }
 
-            click(button) {
+            startGame(button) {
                 [this.duo, this.carre, this.cash].forEach(b => {
                     if (button == b) {
                         b.brighten()
@@ -123,33 +158,19 @@
                         b.fade()
                     }
                 })
-
-                if (button == this.good) {
-                    this.sounds.chrono.pause()
-                    this.sounds.good.currentTime = .5
-                    this.sounds.good.play()
-                }
-
-                if (button == this.bad) {
-                    this.sounds.chrono.pause()
-                    this.sounds.bad.currentTime = 0
-                    this.sounds.bad.play()
-                }
             }
-        }
 
-        class Player {
-            name;
-            constructor(name) { this.name = name }
-        }
+            goodAnswer() {
+                this.sounds.chrono.pause()
+                this.sounds.good.currentTime = .5
+                this.sounds.good.play()
+            }
 
-        var players = [];
-
-        function newPlayer(name) {
-            var player = new Player(name);
-            players.push(player);
-            console.log("players", players);
-            update();
+            badAnswer() {
+                this.sounds.chrono.pause()
+                this.sounds.bad.currentTime = 0
+                this.sounds.bad.play()
+            }
         }
 
         function update() {
