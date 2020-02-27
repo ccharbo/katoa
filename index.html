@@ -78,12 +78,16 @@
         }
 
         class Audio {
-            static create(src) {
-                var audio = document.createElement("audio")
-                audio.src = src
-                audio.preload = true
-                return audio
+            constructor(src, startTime) {
+                this.audio = document.createElement("audio")
+                this.audio.src = src
+                this.audio.preload = true
+                this.startTime = startTime
             }
+
+            paused() { return this.audio.paused }
+            pause() { this.audio.pause() }
+            play() { this.audio.currentTime = this.startTime; this.audio.play() }
         }
 
         class Player {
@@ -136,13 +140,13 @@
                 this.good = new Good(this)
                 this.bad = new Bad(this)
 
-                this.players = [new Player(this, "my name")]
+                this.players = [new Player(this, "Joueur")]
 
                 this.sounds = {
-                    chrono: Audio.create("sounds/chrono.mp3"),
-                    chronoEnd: Audio.create("sounds/chrono-end.mp3"),
-                    good: Audio.create("sounds/good-answer.mp3"),
-                    bad: Audio.create("sounds/bad-answer.mp3"),
+                    chrono: new Audio("sounds/chrono.mp3", 1.3),
+                    chronoEnd: new Audio("sounds/chrono-end.mp3", 0),
+                    good: new Audio("sounds/good-answer.mp3", .5),
+                    bad: new Audio("sounds/bad-answer.mp3", 0),
                 }
 
                 // UI
@@ -162,8 +166,7 @@
                         b.brighten()
                         this.currentGain = b.gain
 
-                        if (this.sounds.chrono.paused) {
-                            this.sounds.chrono.currentTime = 1.3
+                        if (this.sounds.chrono.paused()) {
                             this.sounds.chrono.play()
                         } else {
                             this.sounds.chrono.pause()
@@ -178,14 +181,12 @@
 
             goodAnswer() {
                 this.sounds.chrono.pause()
-                this.sounds.good.currentTime = .5
                 this.sounds.good.play()
                 if (this.currentPlayer) this.currentPlayer.addScore(this.currentGain)
             }
 
             badAnswer() {
                 this.sounds.chrono.pause()
-                this.sounds.bad.currentTime = 0
                 this.sounds.bad.play()
             }
         }
