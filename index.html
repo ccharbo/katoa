@@ -129,25 +129,31 @@
         class Player {
             constructor(game, name) {
                 var text = document.createElement("div")
-                text.textContent = name
                 text.style.fontFamily = "DIN"
                 text.style.position = "absolute"
                 text.style.top = "50%"
                 text.style.left = "50%"
                 text.style.transform = "translate(-50%, -50%)"
                 text.style.userSelect = "none"
-                
+                text.onclick = () => game.renamePlayer(this);
+
                 var img = Image.createFromTexture("textures/1x/atf-and/rankingui.png", 555, 102, 270, 100)
-                // img.onclick = () => game.renamePlayer(this);
+                img.onclick = () => game.renamePlayer(this);
 
-                this.div = document.createElement("div")
-                this.div.style.position = "relative"
-                this.div.style.textAlign = "center"
-                this.div.style.width = "270px"
-                this.div.append(text, img)
+                var div = document.createElement("div")
+                div.style.position = "relative"
+                div.style.textAlign = "center"
+                div.style.width = "270px"
+                div.append(text, img)
 
-                console.log("player", name)
+                this.div = div
+                this.text = text
+
+                this.setName(name)
             }
+
+            setName(name) { if (name) this.text.textContent = name }
+
         }
 
         class Game {
@@ -205,6 +211,10 @@
                 this.sounds.chrono.pause()
                 this.sounds.bad.currentTime = 0
                 this.sounds.bad.play()
+            }
+
+            renamePlayer(player) {
+                player.setName(window.prompt("Nom"))
             }
         }
 
